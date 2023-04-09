@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form</title>
   </head>
   <body>
-    <h1>test</h1>
+    <div class="formBox">
+      <div class="circle-one circle"></div>
+      <form>
+        <label for="text">UserName</label>
+        <input type="text" />
+        <label for="password">Password</label>
+        <input type="password" />
+      </form>
+      <div class="buttons">
+        <button id="btn">Submit</button>
+        <button id="btn">Search</button>
+      </div>
+      <div class="circle-two circle"></div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

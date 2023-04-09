@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(59, 59, 61, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+}
+
+.formBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 30%;
+  height: 75vh;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+.formBox form input {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 5px 15px;
+}
+
+.formBox .button {
+  display: flex;
+  width: 100%;
+}
+
+.formBox button {
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  margin: 2rem 0.5rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.circle {
+  position: absolute;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  width: 20%;
+  height: 40%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-one {
+  top: 3%;
+  left: 27%;
+}
+
+.circle-two {
+  top: 60%;
+  right: 27%;
+}
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 0.7rem;
+  }
+  .formBox {
+    width: max-content;
+    padding: 5rem;
+  }
+
+  .buttons button {
+    padding: 0.7rem 1rem;
+  }
+}
