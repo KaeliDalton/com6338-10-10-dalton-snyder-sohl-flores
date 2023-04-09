@@ -13,11 +13,29 @@
   </head>
   <body class="body">
     <header class="header">
-      <nav class="header__nav">
-        <a href="index.html" class="header__nav-link">Home</a>
-        <a href="news.html" class="header__nav-link">News</a>
-        <a href="weather.html" class="header__nav-link">Weather</a>
-      </nav>
+        <div class="logo">Weather Website</div>
     </header>
+    <nav class="header__nav">
+        <ul>
+            <li><a href="index.html" class="header__nav-link">Home</a></li>
+            <li><a href="news.html" class="header__nav-link">News</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Current Weather Conditions</h1>
+        <p class="weather-copy">Check today's weather for anywhere in the world!</p>
+        <div id="weather-div" class="search-container">
+            <form class="search-form">
+                <div class="search-input">
+                    <label for="weather-search" class="search-short">Enter Location</label>
+                    <input name="search" id="weather-search" type="text" placeholder="Enter Location"/>
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Weather Website</p>
+    </footer>
   </body>
 </html>

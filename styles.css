@@ -145,10 +145,17 @@ footer {
   flex-wrap: wrap;
 }
 
+/* Specific Styles -- Weather */
+.search-short {
+  display: none;
+}
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
   .card {
     width: 100%;
+  }
+  .search-short {
+    display: flex;
   }
 }
