@@ -149,6 +149,18 @@ footer {
 .search-short {
   display: none;
 }
+
+/* New CSS Rule - Search Results */
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-results .card {
+  width: 30%;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
