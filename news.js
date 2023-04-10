@@ -16,7 +16,7 @@ searchForm.addEventListener('submit', async (event) => {
         searchResults.innerHTML = '';
         data.results.forEach(article => {
             const articleDiv = document.createElement('div');
-            articleDiv.innerHTML = `<h3>${article.title}</h3><p>${article.summary}</p><a href="${article.link}" target="_blank">Read more</a>`;
+            articleDiv.innerHTML = `<h3>${article.title}</h3><p>${article.title}</p><a href="${article.link}" target="_blank">Read more</a>`;
             searchResults.appendChild(articleDiv);
         });
 
