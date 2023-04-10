@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', async (event) => {
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-        console.log(data)
+        console.log(data);
         searchResults.innerHTML = '';
         data.results.forEach(article => {
             const articleDiv = document.createElement('div');
@@ -24,3 +24,4 @@ searchForm.addEventListener('submit', async (event) => {
         console.log(error);
     }
 });
+
