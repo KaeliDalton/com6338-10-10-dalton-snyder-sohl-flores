@@ -24,11 +24,18 @@ searchForm.addEventListener('submit', async (event) => {
             if (imageSrc === null) {
                 imageSrc = nullImageSource;
             }
+
+            // checks to see if desc is <15 words. if so, only display first 15 words and add ellipsis.
+            let description = article.description ? article.description : "Description not found";
+            let words = description.split(' ');
+            if (words.length > 15) {
+                description = words.slice(0, 15).join(' ') + '...';
+            }
             articleDiv.innerHTML = `
                 <h2>${article.title}</h2>
               </div>
               <img src="${imageSrc}" alt="${article.title}">
-                <p class="card-text">${article.description ? article.description : "Description not found"}</p>
+                <p class="card-text">${description}</p>
                 <a href="${article.link}" class="card-link" target="_blank">Read more</a>
               </div>
             `;
