@@ -154,6 +154,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: skyblue;
+}
+
+.weather-main {
+  background-color: skyblue;
+}
+
+.weather-copy {
+  font-size: 18pt;
+}
+
+.weather-text {
+  text-align: center;
 }
 
 /* New CSS Rule - Search Results */
@@ -173,7 +186,7 @@ footer {
   .card {
     width: 100%;
   }
-  .search-short {
-    display: flex;
+  #weather-search {
+    font-size: 12pt;
   }
 }
