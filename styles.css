@@ -149,6 +149,24 @@ footer {
 .search-short {
   display: none;
 }
+
+.weather-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* New CSS Rule - Search Results */
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-results .card {
+  width: 30%;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
