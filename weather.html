@@ -21,18 +21,19 @@
             <li><a href="news.html" class="header__nav-link">News</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Current Weather Conditions</h1>
+    <main class="weather-main">
+      <div class="weather-text">
+        <h1 class="weather-heading">Current Weather Conditions</h1>
         <p class="weather-copy">Check today's weather for anywhere in the world! Just enter the city and country!</p>
         <div class="search-container">
           <section id="weather"></section>
             <form class="search-form">
                 <div class="search-input">
-                    <label for="weather-search" class="search-short">Enter Location</label>
-                    <input name="search" id="weather-search" type="text" placeholder="Enter Location"/>
+                    <input name="search" id="weather-search" class="weather-search" type="text" placeholder="Enter Location"/>
                     <button type="submit">Search</button>
                 </div>
             </form>
+            </div>
             <div id="weather-div" class="weather-div"></div>
         </div>
     </main>
