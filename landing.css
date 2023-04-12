@@ -38,6 +38,7 @@ h2 {
   
 button {
     margin: 0 10px;
+    width: 120px;
 }
  
 .news-btn a {
@@ -78,4 +79,41 @@ footer {
     text-align: center;
 }
 
-/* add media queries
+/* mobile, ipad and tablet responsive */
+
+/* 320px — 480px:mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 17px;
+    text-align: center;
+  }
+  .news-btn, .weather-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  button {
+    margin: 0 10px;
+    width: 110px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
+
+/* 481px — 785px:ipads and tablets */
+@media only screen and (min-width: 481px) and (max-width: 785px) {
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    footer {
+        font-size: 12px;
+      }
+}
