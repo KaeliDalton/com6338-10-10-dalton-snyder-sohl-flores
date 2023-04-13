@@ -95,7 +95,6 @@ footer {
   border-radius: 25px 0 0 25px;
   background-color: #eee;
   margin-left: -1px;
-  border-radius: 25px 0 0 25px;
 }
 
 .search-form button[type="submit"] {
@@ -106,7 +105,6 @@ footer {
   border-radius: 0 25px 25px 0;
   cursor: pointer;
   margin-left: -4px;
-  border-radius: 0 25px 25px 0;
 }
 
 .search-input {
@@ -157,9 +155,6 @@ footer {
 }
 
 /* Specific Styles -- Weather */
-.search-short {
-  display: none;
-}
 
 .weather-div {
   display: flex;
@@ -178,6 +173,17 @@ footer {
 
 .weather-text {
   text-align: center;
+}
+.weather-search-input {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.weather-search-input button[type="submit"] {
+  width: 100px;
+  height: auto;
+  color: #fff;
 }
 
 /* New CSS Rule - Search Results */
@@ -219,14 +225,11 @@ button {
   margin: 0 10px;
   width: 120px;
 }
-.news-btn a {
+.news-btn a, .weather-btn a {
   text-decoration: none;
   color: var(--text-color);
 }
-.weather-btn a {
-  text-decoration: none;
-  color: var(--text-color);
-}
+
 .news-btn, .weather-btn {
   background-color: #536DEB;
   border: none;
@@ -259,15 +262,10 @@ button {
   .card {
     width: 100%;
   }
-  #weather-search {
-    font-size: 12pt;
-  }
 }
 
-/* mobile, ipad and tablet responsive -- Landing */
-
 /* 320px — 480px:mobile devices */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .landing-h1 {
     font-size: 35px;
     text-align: center;
@@ -281,16 +279,21 @@ button {
     padding: 8px 16px;
   }
   button {
-    margin: 0 10px;
     width: 110px;
   }
   .landing-footer {
     font-size: 10px;
   }
+  #weather-search {
+    font-size: 12pt;
+  }
+  .weather-copy {
+    font-size: 14pt;
+  }
 }
 
 /* 481px — 785px:ipads and tablets */
-@media only screen and (min-width: 481px) and (max-width: 785px) {
+@media screen and (min-width: 481px) and (max-width: 785px) {
     .landing-h1 {
       font-size: 50px;
       text-align: center;
@@ -300,5 +303,8 @@ button {
     }
     .landing-footer {
         font-size: 12px;
-      }
+    }
+    .weather-copy {
+      font-size: 16pt;
+    }
 }
