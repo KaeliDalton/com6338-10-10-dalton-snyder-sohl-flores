@@ -44,6 +44,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #6C83F4;
+}
+
 main {
   padding: 20px;
   display: flex;
