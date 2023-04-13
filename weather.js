@@ -27,10 +27,19 @@ form.onsubmit = async function (e) {
            weatherDiv.innerHTML = err.message
    }
 }
+
+//check past cities searched
+if (localStorage.getItem('city')){
+    const pastSearch = JSON.parse(localStorage.getItem('city'));
+    displayData(pastSearch);
+}
+
 const displayData = (data) => {
     city = ""
     weatherDiv.innerHTML = ""
     search.value = ''
+    localStorage.setItem('city', JSON.stringify(data));
+    
 //show city
 const location = document.createElement('h2')
 const {
