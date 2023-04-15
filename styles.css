@@ -225,11 +225,10 @@ button {
   margin: 0 10px;
   width: 120px;
 }
-.news-btn a, .weather-btn a {
+.news-btn, .weather-btn {
   text-decoration: none;
   color: var(--text-color);
 }
-
 .news-btn, .weather-btn {
   background-color: #536DEB;
   border: none;
@@ -238,7 +237,6 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
   transition: 200ms;
-  text-decoration: none;
   font-size: 1rem;
   margin: 0 10px;
 }
