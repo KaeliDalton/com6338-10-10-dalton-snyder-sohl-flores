@@ -237,7 +237,6 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
   transition: 200ms;
-  text-decoration: none;
   font-size: 1rem;
   margin: 0 10px;
 }
@@ -261,15 +260,10 @@ button {
   .card {
     width: 100%;
   }
-  .search-short {
-    display: flex;
-  }
 }
 
-/* mobile, ipad and tablet responsive -- Landing */
-
 /* 320px — 480px:mobile devices */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .landing-h1 {
     font-size: 35px;
     text-align: center;
@@ -283,16 +277,21 @@ button {
     padding: 8px 16px;
   }
   button {
-    margin: 0 10px;
     width: 110px;
   }
   .landing-footer {
     font-size: 10px;
   }
+  #weather-search {
+    font-size: 12pt;
+  }
+  .weather-copy {
+    font-size: 14pt;
+  }
 }
 
 /* 481px — 785px:ipads and tablets */
-@media only screen and (min-width: 481px) and (max-width: 785px) {
+@media screen and (min-width: 481px) and (max-width: 785px) {
     .landing-h1 {
       font-size: 50px;
       text-align: center;
@@ -302,5 +301,8 @@ button {
     }
     .landing-footer {
         font-size: 12px;
-      }
+    }
+    .weather-copy {
+      font-size: 16pt;
+    }
 }
