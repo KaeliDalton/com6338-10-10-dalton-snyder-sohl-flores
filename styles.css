@@ -206,11 +206,7 @@ button {
   margin: 0 10px;
   width: 120px;
 }
-.news-btn a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-.weather-btn a {
+.news-btn, .weather-btn {
   text-decoration: none;
   color: var(--text-color);
 }
