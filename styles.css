@@ -225,11 +225,10 @@ button {
   margin: 0 10px;
   width: 120px;
 }
-.news-btn a, .weather-btn a {
+.news-btn, .weather-btn {
   text-decoration: none;
   color: var(--text-color);
 }
-
 .news-btn, .weather-btn {
   background-color: #536DEB;
   border: none;
@@ -254,42 +253,6 @@ button {
   position: absolute;
   width: 100%;
   text-align: center;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 600px) {
-  .card {
-    width: 100%;
-  }
-}
-
-/* 320px — 480px:mobile devices */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .landing-h1 {
-    font-size: 35px;
-    text-align: center;
-  }
-  .landing-h2 {
-    font-size: 17px;
-    text-align: center;
-  }
-  .news-btn, .weather-btn {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-  button {
-    width: 110px;
-  }
-  .landing-footer {
-    font-size: 10px;
-  }
-  #weather-search {
-    font-size: 12pt;
-  }
-  .weather-copy {
-    font-size: 14pt;
-  }
 }
 
 /* 481px — 785px:ipads and tablets */
