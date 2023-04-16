@@ -6,8 +6,8 @@ html {
 :root {
   --background-color: #181818;
   --text-color: #ffffff;
-  --button-color: #536DEB;
-  --hover-color: #6C83F4;
+  --button-color: #536deb;
+  --hover-color: #6c83f4;
 }
 
 body {
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #6C83F4;
+  color: #6c83f4;
 }
 
 main {
@@ -72,6 +72,12 @@ footer {
 }
 
 /* Specific Styles -- News */
+
+.news-main {
+  background-color: #181818;
+  color: #ffffff;
+}
+
 .logo {
   font-size: 28px;
 }
@@ -98,7 +104,7 @@ footer {
 }
 
 .search-form button[type="submit"] {
-  height: 40px;
+  height: 100px;
   width: 80px;
   border: none;
   background-color: #646464;
@@ -124,17 +130,18 @@ footer {
 }
 
 .search-input button[type="submit"] {
-  height: 40px;
+  height: 50px;
   width: 100px;
   border: none;
-  background-color: #646464;
+  background-color: #536deb;
   border-radius: 0 25px 25px 0;
   cursor: pointer;
   color: #fff;
 }
 
 .card {
-  width: 30%;
+  background-color: #646464;
+  width: 40%;
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -152,6 +159,17 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+/* New CSS Rule - Search Results */
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.search-results .card {
+  width: 30%;
 }
 
 /* Specific Styles -- Weather */
@@ -196,21 +214,10 @@ footer {
   padding: 10pt;
 }
 
-/* New CSS Rule - Search Results */
-.search-results {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.search-results .card {
-  width: 30%;
-}
-
 /* Specific Styles -- Landing */
 .landing-body {
   background-color: var(--background-color);
-  height: 100vh; 
+  height: 100vh;
   margin: 0;
   justify-content: center;
   align-items: center;
@@ -218,29 +225,31 @@ footer {
 .landing-h1 {
   color: var(--text-color);
   font-size: 80px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .landing-h2 {
   color: var(--text-color);
   font-size: 25px;
-  margin: 20px auto 0; 
+  margin: 20px auto 0;
 }
 .btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto 0; 
+  margin: 20px auto 0;
 }
 button {
   margin: 0 10px;
   width: 120px;
 }
-.news-btn, .weather-btn {
+.news-btn,
+.weather-btn {
   text-decoration: none;
   color: var(--text-color);
 }
-.news-btn, .weather-btn {
-  background-color: #536DEB;
+.news-btn,
+.weather-btn {
+  background-color: #536deb;
   border: none;
   padding: 12px 24px;
   border-radius: 12px;
@@ -250,13 +259,14 @@ button {
   font-size: 1rem;
   margin: 0 10px;
 }
-.news-btn:hover, .weather-btn:hover {
+.news-btn:hover,
+.weather-btn:hover {
   background-color: var(--hover-color);
 }
 .landing-footer {
   background-color: var(--background-color);
   color: var(--text-color);
-  height: 100px; 
+  height: 100px;
   left: 0;
   bottom: 0;
   position: absolute;
@@ -282,7 +292,8 @@ button {
     font-size: 17px;
     text-align: center;
   }
-  .news-btn, .weather-btn {
+  .news-btn,
+  .weather-btn {
     font-size: 16px;
     padding: 8px 16px;
   }
@@ -302,17 +313,17 @@ button {
 
 /* 481px — 785px:ipads and tablets */
 @media screen and (min-width: 481px) and (max-width: 785px) {
-    .landing-h1 {
-      font-size: 50px;
-      text-align: center;
-    }
-    .landing-h2 {
-      font-size: 22px;
-    }
-    .landing-footer {
-        font-size: 12px;
-    }
-    .weather-copy {
-      font-size: 16pt;
-    }
+  .landing-h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .landing-h2 {
+    font-size: 22px;
+  }
+  .landing-footer {
+    font-size: 12px;
+  }
+  .weather-copy {
+    font-size: 16pt;
+  }
 }
