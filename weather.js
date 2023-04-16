@@ -59,6 +59,7 @@ const displayData = (data) => {
     feelsLike.textContent = `Feels like: ${feelsLikeTemp}° F`
     weatherDiv.appendChild(feelsLike)
 
+    //show time of sunrise
     const sunriseDateTime = document.createElement('p')
     const sunriseDate = new Date((sunrise) * 1000)
     const sunriseTime = sunriseDate.toLocaleTimeString('en-US',  {
@@ -67,6 +68,7 @@ const displayData = (data) => {
     sunriseDateTime.textContent = `Sunrise: ${sunriseTime}`
     weatherDiv.appendChild(sunriseDateTime)
 
+    //show time of sunset
     const sunsetDateTime = document.createElement('p')
     const sunsetDate = new Date((sunset) * 1000)
     const sunsetTime = sunsetDate.toLocaleTimeString('en-US',  {
